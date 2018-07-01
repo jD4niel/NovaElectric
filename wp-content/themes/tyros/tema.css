@@ -1,0 +1,205 @@
+<style>
+
+     #parent-slider-wrap {
+         height: calc( (100vw - ( 100vw - 1140px) ) * 0.42);
+     }
+
+     h1,h2,h3,h4,h5,h6 {
+         font-family: Josefin Sans, sans-serif;
+     }
+
+     body {
+         font-size: 14px;
+         font-family: Lato, sans-serif;
+     }
+
+     div#masonry-blog-wrapper .post-category,
+     div#masonry-blog-wrapper .post-meta,
+     body.single-team_member .sc_personal_quote span.sc_personal_quote_content {
+         font-family: Lato, sans-serif;
+     }
+
+     /*
+     ----- Header Heights ---------------------------------------------------------
+     */
+
+     @media (min-width:992px) {
+         #site-branding,
+         #site-navigation,
+         #site-branding-sticky-wrap-sticky-wrapper
+         {
+            height: 80px !important;
+         }
+         #site-branding img {
+            max-height: 80px;
+         }
+         div#primary-menu > ul > li,
+         ul#primary-menu > li {
+             line-height: 80px;
+         }
+     }
+     @media (max-width:991px) {
+         #site-branding,
+         #site-navigation,
+         #site-branding-sticky-wrap-sticky-wrapper
+         {
+            height: 80px !important;
+         }
+         #site-branding img {
+            max-height: 80px;
+         }
+         div#primary-menu > ul > li,
+         ul#primary-menu > li {
+             line-height: 80px;
+         }
+     }
+
+
+     /*
+     ----- Theme Colors -----------------------------------------------------
+     */
+
+
+     /* --- Primary --- */
+
+     a,
+     a:visited,
+     .primary-color,
+     .btn-primary .badge,
+     .btn-link,
+     .sc-primary-color,
+     .icon404,
+     .nav-menu > li a:hover,
+     .smartcat_team_member:hover h4,
+     #site-navigation.main-navigation li a:hover,
+     #site-navigation.main-navigation li.current_page_item > a,
+     #site-cta .site-cta .fa,
+     .feature-grid .fa,
+     header#masthead div#primary-menu > ul > li:hover > a,
+     header#masthead ul#primary-menu > li:hover > a,
+     .woocommerce .woocommerce-breadcrumb a,
+     .order-total .amount,
+     aside.widget_product_categories ul.product-categories li a:hover
+     {
+         color: rgb(112, 196, 201);
+     }
+
+     .woocommerce-message::before,
+     .sc_personal_quote span.sc_team_icon-quote-left,
+     .sc_team_single_member .articles .article a,
+     .woocommerce ins .amount {
+         color: rgb(112, 196, 201) !important;
+     }
+
+     a.btn-primary,
+     .btn-primary,
+     .tyros-button,
+     fieldset[disabled] .btn-primary.active,
+     ul.social-icons li a:hover,
+     #site-toolbar .row .social-bar a:hover,
+     #main-heading,
+     #site-cta .site-cta .fa.hover,
+     #site-toolbar .social-bar a:hover,
+     div#post-slider-cta,
+     .btn, button, input[type="button"], input[type="reset"], input[type="submit"],
+     #homepage-area-b .top-banner-text,
+     .woocommerce a.button.add_to_cart_button,
+     .woocommerce button.single_add_to_cart_button,
+     .woocommerce a.button.product_type_simple,
+     .woocommerce button.product_type_simple,
+     .widget.woocommerce a.button,
+     .woocommerce-cart .woocommerce a.button,
+     .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt,
+     .woocommerce span.onsale, .woocommerce-page span.onsale,
+     .wc-pagination ul span.page-numbers.current,
+     .pagination-links .page-numbers.current,
+     .woocommerce .widget_price_filter .ui-slider .ui-slider-handle, .woocommerce-page .widget_price_filter .ui-slider .ui-slider-handle,
+     .woocommerce .widget_price_filter .ui-slider .ui-slider-range, .woocommerce-page .widget_price_filter .ui-slider .ui-slider-range,
+     .woocommerce #respond input#submit.alt.disabled, .woocommerce #respond input#submit.alt.disabled:hover, .woocommerce #respond input#submit.alt:disabled, .woocommerce #respond input#submit.alt:disabled:hover, .woocommerce #respond input#submit.alt:disabled[disabled], .woocommerce #respond input#submit.alt:disabled[disabled]:hover, .woocommerce a.button.alt.disabled, .woocommerce a.button.alt.disabled:hover, .woocommerce a.button.alt:disabled, .woocommerce a.button.alt:disabled:hover, .woocommerce a.button.alt:disabled[disabled], .woocommerce a.button.alt:disabled[disabled]:hover, .woocommerce button.button.alt.disabled, .woocommerce button.button.alt.disabled:hover, .woocommerce button.button.alt:disabled, .woocommerce button.button.alt:disabled:hover, .woocommerce button.button.alt:disabled[disabled], .woocommerce button.button.alt:disabled[disabled]:hover, .woocommerce input.button.alt.disabled, .woocommerce input.button.alt.disabled:hover, .woocommerce input.button.alt:disabled, .woocommerce input.button.alt:disabled:hover, .woocommerce input.button.alt:disabled[disabled], .woocommerce input.button.alt:disabled[disabled]:hover,
+     .sc_team_single_member .sc_team_single_skills .progress, .sc-tags .sc-single-tag
+     {
+         background: rgb(112, 196, 201);
+
+     }
+
+     .woocommerce input[type="submit"].button,
+     .woocommerce a.checkout-button.button,
+     .woocommerce form input.submit,
+     .woocommerce-message a.button
+     {
+         background: rgb(112, 196, 201) !important;
+     }
+
+     .sc-primary-border,
+     .scroll-top:hover,
+     #site-cta .site-cta .fa.hover {
+         border-color: rgb(112, 196, 201);
+     }
+
+     .woocommerce-message,
+     .sc_team_single_member .articles .article {
+         border-color: rgb(112, 196, 201) !important;
+     }
+
+     .site-branding .search-bar .search-field:focus {
+         border-bottom: 1px solid rgb(112, 196, 201);
+     }
+
+     #site-cta .site-cta .fa {
+         border: 2px solid rgb(112, 196, 201);
+     }
+
+     @media(max-width: 600px){
+         .nav-menu > li.current_page_item > a{
+             color: rgb(112, 196, 201);
+         }
+     }
+
+     /* --- Secondary --- */
+
+     a:hover
+     {
+         color: rgb(82, 24, 128);
+     }
+
+     .btn-primary:hover,
+     .btn-primary:focus,
+     .btn-primary:active,
+     .btn-primary.active,
+     .open .dropdown-toggle.btn-primary,
+     .btn:hover,button:hover,
+     input[type="button"]:hover,
+     input[type="reset"]:hover,
+     input[type="submit"]:hover,
+     .woocommerce a.button.add_to_cart_button:hover,
+     .woocommerce button.single_add_to_cart_button:hover,
+     .woocommerce a.button.product_type_simple:hover,
+     .woocommerce button.product_type_simple:hover,
+     .widget.woocommerce a.button:hover,
+     .woocommerce-cart .woocommerce a.button:hover,
+     .woocommerce #respond input#submit.alt:hover,
+     .woocommerce a.button.alt:hover,
+     .woocommerce button.button.alt:hover,
+     .woocommerce input.button.alt:hover
+     {
+         background-color: rgb(82, 24, 128);
+     }
+
+     .woocommerce input[type="submit"].button:hover,
+     .woocommerce a.checkout-button.button:hover,
+     .woocommerce form input.submit:hover,
+     .woocommerce-message a.button:hover
+     {
+         background: rgb(82, 24, 128) !important;
+     }
+
+     .btn-primary:hover,
+     .btn-primary:focus,
+     .btn-primary:active,
+     .btn-primary.active,
+     .open .dropdown-toggle.btn-primary {
+         border-color: rgb(82, 24, 128) !important;
+     }
+
+
+ </style>
